@@ -7,7 +7,7 @@ function Admin() {
     const [searchQuery, setSearchQuery] = useState('');
     const [activeTab, setActiveTab] = useState('accounts');
 
-    const API_URL = 'http://localhost:8081/api/admin';
+    const API_URL = 'https://bankingdb-production.up.railway.app/api/admin';
 
     useEffect(() => {
         fetchAccounts();
