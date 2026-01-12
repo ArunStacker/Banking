@@ -7,7 +7,7 @@ function Loan() {
     const [message, setMessage] = useState({ type: '', text: '' });
     const [viewingStatus, setViewingStatus] = useState(false);
 
-    const API_URL = 'http://localhost:8081/api/loans';
+    const API_URL = 'https://bankingdb-production.up.railway.app/api/loans';
 
     const handleSubmit = async (e) => {
         e.preventDefault();
