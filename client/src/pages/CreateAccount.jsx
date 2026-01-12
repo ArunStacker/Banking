@@ -16,7 +16,7 @@ function CreateAccount() {
     const [success, setSuccess] = useState(null);
 
     // Use environment variable for API URL in real apps, here hardcoded for demo
-    const API_URL = 'http://localhost:8081/api/accounts';
+    const API_URL = 'https://bankingdb-production.up.railway.app/api/accounts';
 
     const handleChange = (e) => {
         setFormData({
