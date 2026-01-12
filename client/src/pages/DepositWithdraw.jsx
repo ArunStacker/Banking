@@ -11,7 +11,7 @@ function DepositWithdraw() {
     const [message, setMessage] = useState({ type: '', text: '' });
     const [showOtp, setShowOtp] = useState(false);
 
-    const API_URL = 'http://localhost:8081/api/accounts';
+    const API_URL = 'https://bankingdb-production.up.railway.app/api/accounts';
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
