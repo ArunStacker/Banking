@@ -15,7 +15,7 @@ function Statement() {
         const end = `${formData.endDate}T23:59:59`;
 
         try {
-            const res = await axios.get(`http://localhost:8081/api/accounts/${formData.accountNumber}/statement?startDate=${start}&endDate=${end}`);
+            const res = await axios.get(`https://bankingdb-production.up.railway.app/api/accounts/${formData.accountNumber}/statement?startDate=${start}&endDate=${end}`);
             setTransactions(res.data);
             setHasSearched(true);
         } catch (err) {
